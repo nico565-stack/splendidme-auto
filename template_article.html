@@ -1,0 +1,9 @@
+
+<h1>{{title}}</h1>
+<p>Scopri le migliori soluzioni per <strong>{{keyword}}</strong> nel 2025. Ecco la nostra selezione top:</p>
+<ul>
+{% for p in products %}
+<li><strong>{{p.name}}</strong> - {{p.desc}} - Prezzo: {{p.price}}€ <a href="{{p.link}}" target="_blank">Compra ora</a></li>
+{% endfor %}
+</ul>
+<p>Non perdere tempo, scegli il prodotto migliore per te!</p>
